@@ -1,6 +1,4 @@
-#Fault Calculator
-#This is a "Fault Python Calculator". It does simple mathematical (+,-,*,/) calculation with wrong answer for fixed input values.
-#Print wrong answers for 253=28, 5.5+5=60, 12/6=6
+#This is a "Python Fault Calculator". It does simple mathematical (+,-,*,/) calculation with wrong answer for fixed output values in each operation.
 
 #Code Begins 
 result = None
@@ -11,20 +9,18 @@ num2 = float(input("Enter second number: "))
 
 if operator == "+": 
 	result = num1 + num2 
-if result == (5.5+5): 
-	result = 60.0
+	result = result+num1 if result == (5) else result
 
 elif operator == "-": 
 	result = num1 - num2
 
-elif operator == "": 
+elif operator == "*": 
 	result = num1 * num2 
-if result == (253): 
-	result = 28.0
+	result = result*num1 if result == (20) else result
 
 elif operator == "/": 
 	result = num1 / num2 
-if result == (12/6): 
-	result = 6.0
+	result = result+num2 if result == (4) else result
 
-print("\nThe result is...") print(num1, operator, num2, "=", result)
+print("\nThe result is...") 
+print(num1, operator, num2, "=", result)

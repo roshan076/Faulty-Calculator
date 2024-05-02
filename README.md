@@ -17,4 +17,4 @@ The program prompts the user to input a mathematical operator (+, -, *, /) and t
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/roshan076/Faulty_Calculator.git
+   git clone https://github.com/roshan076/Faulty-Calculator.git
